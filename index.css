@@ -80,3 +80,119 @@ nav {
     }
 
 }
+
+
+/*  */
+.plant-section {
+    margin-bottom: 100px;
+}
+
+.plant-section h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.plant-section p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.card {
+    width: 270px;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .plant-cards {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+
+    .card img {
+        width: 171px;
+    }
+
+    .card {
+        width: 171px;
+    }
+
+    .plant-section p {
+        font-size: 14px;
+    }
+
+
+}
+
+
+/*  */
+
+.plant-lover-section {
+    display: flex;
+}
+
+.plant-lover-section img {
+    width: 540px;
+
+}
+
+.plant-lover-section ul>li {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media screen and (max-width: 768px) {
+    .plant-lover-section {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .plant-lover-section img {
+        width: 100%;
+    }
+
+    .plant-lover-section ul>li {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/*  */
+
+.deal-section {
+    margin-top: 133px;
+}
+
+.deal-section h1 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.deal-section p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
