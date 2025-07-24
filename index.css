@@ -1,3 +1,14 @@
+.tiktok-sans-font {
+    font-family: "TikTok Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100;
+}
+
+
 body {
     max-width: 1140px;
     margin: 0 auto;
@@ -195,13 +206,28 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    margin-top: 200px;
+    gap: 20px;
     width: 1140px;
     height: 597px;
 
 }
 
-.plant-lover-section img {
+.badge img {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 340px;
+    width: 286px;
+    height: 286px;
+    border-radius: 10px;
+    animation: spin 7s linear infinite;
+
+
+}
+
+
+
+.flower img {
     width: 540px;
 
 }
@@ -222,9 +248,9 @@ nav {
     font-weight: bold;
 }
 
-.li-text {
+/* .li-text {
     margin-top: 40px;
-}
+} */
 
 @media screen and (max-width: 576px) {
     .plant-lover-section {
@@ -236,6 +262,10 @@ nav {
         margin-top: 40px;
         width: 361px;
         height: 648px;
+    }
+
+    .badge img {
+        display: none;
     }
 
     .plant-lover-section img {
@@ -503,5 +533,16 @@ nav {
     .link-for-mobile {
         display: block;
 
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
