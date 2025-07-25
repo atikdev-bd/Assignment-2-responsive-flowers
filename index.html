@@ -11,27 +11,35 @@
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
-    <title>Document</title>
+    <title>Faugei</title>
 </head>
 
 <body class="tiktok-sans-font">
 
     <header>
-        <nav>
 
+        <!-- navbar start -->
+        <nav>
             <div>
                 <img src="assets/logo.png" alt="">
             </div>
             <ul class="link">
-                <li class="sm-hidden"><a href="">Home</a></li>
-                <li class="sm-hidden"><a href="">Shop</a></li>
-                <li class="sm-hidden"><a href="">About Us</a></li>
-                <li><a href="">Cart</a></li>
-
+                <li class="sm-hidden home"><a href="">Home</a></li>
+                <li class="sm-hidden shop"><a href="">Shop</a></li>
+                <li class="sm-hidden about"><a href="">About Us</a></li>
+                <li>
+                    <a class="trolley-logo" href="">
+                        <img class="trolley" src="assets/icons8-add-shopping-cart-50.png" alt="">
+                        <p>cart($56)</p>
+                    </a>
+                </li>
             </ul>
-
         </nav>
 
+        <!-- navbar end -->
+
+
+        <!-- head banner start -->
         <div class="head-banner">
             <div>
                 <h1 class="">ALWAYS <span class="yellow-color">FRESH <br> FLOWERS</span> </h1>
@@ -48,8 +56,12 @@
             </div>
 
         </div>
+        <!-- head banner end -->
     </header>
 
+
+
+    <!-- plant-section start -->
     <div class="plant-section">
         <h1><span class="yellow-color">Our</span> Plants</h1>
         <p>Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to
@@ -62,59 +74,63 @@
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
 
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
 
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
 
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
 
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
 
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
             <div class="card">
                 <img src="assets/sample-flower-image.png" alt="">
                 <h2>Lily Blossom</h2>
                 <h3>20 USD</h3>
-                <button class="btn">ADD TO CART</button>
+                <button onclick="alert('Flower Added to Cart')" class="btn">ADD TO CART</button>
             </div>
         </div>
 
     </div>
 
+    <!--  plant-section end -->
+
+
+    <!-- plant-lover-section start -->
     <div class="plant-lover-section">
         <div class="container">
             <div class="badge">
@@ -145,7 +161,11 @@
         </div>
     </div>
 
+    <!-- plant-lover-section end -->
 
+
+
+    <!-- deal-section start -->
     <div class="deal-section">
         <h1><span class="yellow-color">Latest</span> Deals</h1>
         <div class="deal-text">
@@ -159,24 +179,24 @@
             <div class="two-card">
                 <div class="deal-card-1">
                     <div>
-                        <h2>50% off | Bloom Plant</h2>
+                        <h2>60% Off | Bloom Plant</h2>
 
-                        <button>Shop Now</button>
+                        <p>Shop Now</p>
                     </div>
                 </div>
                 <div class="deal-card-2">
                     <div>
-                        <h2>50% off | Bloom Plant</h2>
+                        <h2>30% Off | Ana Plant</h2>
 
-                        <button class="shop-btn">Shop Now</button>
+                        <p>Shop Now</p>
                     </div>
                 </div>
             </div>
             <div class="deal-card-3">
                 <div>
-                    <h2>50% off | Bloom Plant</h2>
+                    <h2>25% Off | Zabo Plant</h2>
 
-                    <button>Shop Now</button>
+                    <p>Shop Now</p>
                 </div>
             </div>
 
@@ -184,17 +204,24 @@
         </div>
     </div>
 
+    <!--  deal-section end  -->
 
+
+    <!-- join section start -->
     <div class="join-section">
         <div>
-            <h1></h1>
-            <input type="email" name="" id="">
-            <input type="button" value="subscribe">
+            <h1>Join the colorful Bunch</h1>
+            <div class="input">
+                <input class="email" type="email" name="" id="" placeholder="Enter Your Email">
+                <input class="subscribe-btn" type="button" value="subscribe">
+            </div>
         </div>
     </div>
+    <!-- join section end -->
 
 
     <footer>
+        <!-- footer section start -->
         <div class="footer-container">
             <div>
                 <img src="assets/logo.png" alt="">
@@ -242,8 +269,9 @@
 
 
         </div>
-    </footer>
 
+        <!-- footer section end -->
+    </footer>
 
 </body>
 
